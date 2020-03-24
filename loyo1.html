@@ -12,12 +12,126 @@
     
     
     <style>
-      
+      .nav{
+        border: 2px 2px 1px 2px;
+        border-style: solid;
+        margin:5px;
+      }
     </style>
   </head>
   <body>
     
+     <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul> 
     
+    Use justify-content-(center/end) to align horizontally
+    
+    <nav class="nav justify-content-end">
+      <a class="nav-link active" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </nav>
+    
+    Use flex-column to stack vertically
+    
+    <nav class="nav flex-column">
+      <a class="nav-link active" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </nav>
+    
+    Use .nav-tabs to generate a tabbed interface
+    
+    <nav class="nav nav-tabs">
+      <a class="nav-link active" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </nav>
+    
+    You could also use nav-pills
+    
+    <nav class="nav nav-pills">
+      <a class="nav-link active" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </nav>
+    
+    Use nav-fill to occupy all horizontal space
+    
+    <nav class="nav nav-pills nav-fill">
+      <a class="nav-link active" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </nav>
+    
+    Tabs with dropdowns/pills
+    
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    
+    Use text-(Primary/Secondary/Success/Danger/Warning/Info/Light/Dark) to change color of the spinner
+    
+    <div class="spinner-border text-danger" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    
+    Use spinner-grow to change the spinner into a growing one
+    
+    <div class="spinner-grow text-danger" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    
+    To align the spinner (center/end)
+  
+  <div class="d-flex justify-content-end">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  
+  To change the size, you add -sm/-md/-lg/-xl
+  
+  <div class="spinner-border spinner-border-sm" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-grow spinner-grow-sm" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  
+  Change alert-# to change colors (Primary/Secondary/Success/Danger/Warning/Info/Light/Dark)
+  
+  <div class="alert alert-primary" role="alert">
+    A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+  </div>
+  
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
